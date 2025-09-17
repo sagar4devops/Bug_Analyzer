@@ -1,0 +1,50 @@
+[
+  {
+    "bug_id": "BUG-101",
+    "title": "Login page throws 500 error",
+    "description": "When user tries to login with valid credentials, the page crashes with HTTP 500 error.",
+    "status": "Open",
+    "bug_type": "Backend",
+    "comments": "Issue happens only on production; works fine in staging."
+  },
+  {
+    "bug_id": "BUG-102",
+    "title": "UI misalignment on dashboard",
+    "description": "The dashboard widgets overlap on smaller screens.",
+    "status": "In Progress",
+    "bug_type": "UI/UX",
+    "comments": "Reported on Chrome and Safari; needs CSS fix."
+  },
+  {
+    "bug_id": "BUG-103",
+    "title": "Data sync failure",
+    "description": "User transactions are not syncing with reporting DB. Found mismatched record counts.",
+    "status": "Open",
+    "bug_type": "Database",
+    "comments": "Seems related to ETL job failure."
+  },
+  {
+    "bug_id": "BUG-104",
+    "title": "Slow API response",
+    "description": "Payment API takes more than 10 seconds to respond intermittently.",
+    "status": "Open",
+    "bug_type": "Performance",
+    "comments": "Observed spike in latency after recent deployment."
+  },
+  {
+    "bug_id": "BUG-105",
+    "title": "NullPointerException on user profile load",
+    "description": "Clicking user profile causes app to crash with NullPointerException.",
+    "status": "Closed",
+    "bug_type": "Backend",
+    "comments": "Fixed in v2.3.1 release."
+  },
+  {
+    "bug_id": "BUG-106",
+    "title": "Security vulnerability in password reset",
+    "description": "Password reset link does not expire, can be reused multiple times.",
+    "status": "Open",
+    "bug_type": "Security",
+    "comments": "High priority; needs immediate fix."
+  }
+]
